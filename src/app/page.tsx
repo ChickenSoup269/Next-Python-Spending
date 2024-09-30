@@ -1,18 +1,22 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "~/components/ui/accordion"
-import { BarTest } from "~/components/ui/bar"
+// import {
+//   Accordion,
+//   AccordionContent,
+//   AccordionItem,
+//   AccordionTrigger,
+// } from "~/components/ui/accordion"
+// import { BarTest } from "~/components/ui/bar"
+// import { Checkbox } from "~/components/ui/checkbox"
 
-import { Checkbox } from "~/components/ui/checkbox"
+import Card from "~/components/Card"
 
 export default function Home() {
   return (
     <div className="flex flex-row min-h-screen justify-center items-center">
       <main>
-        <Accordion type="single" collapsible>
+        <h1 className="text-mini">Xin chào</h1>
+        <h2 className="roboto-regular">Xin chào các bạn chào Hồng Như</h2>
+        <Card />
+        {/* <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger>Về python v1.0.0</AccordionTrigger>
             <AccordionContent>
@@ -38,7 +42,7 @@ export default function Home() {
           >
             Accept terms and conditions
           </label>
-        </div>
+        </div> */}
       </main>
     </div>
   )
