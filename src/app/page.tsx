@@ -1,14 +1,15 @@
 import Image from "next/image"
 import Link from "next/link"
-import { redirect } from "next/navigation"
+import ButtonRegister from "~/app/components/Button/ButtonRegister"
+// import { redirect } from "next/navigation"
 import Card from "~/components/Card"
 
-const isAuth = true
+// const isAuth = true
 
 export default function Home() {
-  if (!isAuth) {
-    redirect("/login")
-  }
+  // if (!isAuth) {
+  //   redirect("/login")
+  // }
   return (
     <div className="flex flex-row min-h-screen justify-center items-center">
       <main>
@@ -25,6 +26,8 @@ export default function Home() {
           {" "}
           <Link href="/register">register</Link>
         </button>
+
+        <ButtonRegister />
 
         <h1 className="text-mini">Xin chào</h1>
         <h2 className="text">Xin chào các bạn mình là Trần Phước Thiện</h2>
