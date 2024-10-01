@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Custom next js bảo mật các đường dẫn bên ngoài
   images: {
     remotePatterns: [
       {

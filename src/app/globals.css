@@ -97,4 +97,9 @@ body {
   .text {
     font-weight: 100;
   }
+
+  button {
+    color: white;
+    background-color: #000000;
+  }
 }

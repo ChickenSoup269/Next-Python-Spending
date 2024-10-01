@@ -1,10 +1,31 @@
 import Image from "next/image"
+import Link from "next/link"
+import { redirect } from "next/navigation"
 import Card from "~/components/Card"
 
+const isAuth = true
+
 export default function Home() {
+  if (!isAuth) {
+    redirect("/login")
+  }
   return (
     <div className="flex flex-row min-h-screen justify-center items-center">
       <main>
+        <h1>Chuyển trang</h1>
+        <button>
+          {" "}
+          <Link href="/login">Đăng nhập</Link>
+        </button>
+        <button>
+          {" "}
+          <Link href="/home">Home</Link>
+        </button>
+        <button>
+          {" "}
+          <Link href="/register">register</Link>
+        </button>
+
         <h1 className="text-mini">Xin chào</h1>
         <h2 className="text">Xin chào các bạn mình là Trần Phước Thiện</h2>
         <Card />
