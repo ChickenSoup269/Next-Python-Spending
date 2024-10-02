@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation"
 import { redirect } from "next/navigation"
 
-const isAuth = true
+const isAuth = false
 
 if (!isAuth) {
   redirect("/login")

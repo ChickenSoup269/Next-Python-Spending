@@ -11,6 +11,12 @@ const nextConfig = {
       },
     ],
   },
+  // dùng logging nếu log mà build không in ra
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
+  },
 }
 
 export default nextConfig
