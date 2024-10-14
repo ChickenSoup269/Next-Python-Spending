@@ -37,3 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 # Next JS About Python Spending
 - test
+- bla bla server
